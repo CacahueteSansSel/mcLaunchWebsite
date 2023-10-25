@@ -18,9 +18,13 @@ p {
 .page {
     width: 100%;
     height: 98.5vh;
+    display: flex;
+    align-items: center;
 }
 
 .header {
+    position: fixed;
+    width: calc(100vw - 50px);
     max-width: 100%;
     height: 70px;
     display: flex;
@@ -40,7 +44,6 @@ p {
     background: #006035;
     border: 1px solid #008F58;
     padding: 10px 20px;
-    margin-right: 25px;
     border-radius: 3px;
     color: white;
     font-family: Lexend Deca, sans-serif;
@@ -52,8 +55,85 @@ p {
     gap: 5px;
 }
 
+.btn-right {
+    margin-right: 25px;
+}
+
 .btn-primary:active {
     transform: scale(0.95);
     transition: 0.2s;
     transition-property: transform;
+}
+
+.bkg-main {
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.center-icon-text {
+    background: url("res/background_main.png") no-repeat center;
+    background-size: 500px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 100%;
+    height: 50%;
+}
+
+.desc-text p {
+    height: 10px;
+}
+
+.title-text h1 {
+    height: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.slim-text {
+    font-weight: 400;
+    height: 5px;
+}
+
+.slim-text > b {
+    font-weight: 600;
+}
+
+.semitransparent-panel {
+    background: #00000088;
+    border-radius: 10px;
+    border: 1px solid #282828;
+}
+
+.version-box {
+    height: 70px;
+    width: 450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.version-box p {
+    height: 5px;
+}
+
+.version-dl-button {
+    vertical-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#version-text {
+    font-weight: bold;
 }
