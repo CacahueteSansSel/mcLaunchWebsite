@@ -117,6 +117,7 @@ p {
     background: #00000088;
     border-radius: 10px;
     border: 1px solid #282828;
+    backdrop-filter: blur(2px);
 }
 
 .version-box {
