@@ -50,7 +50,7 @@ p {
     font-weight: 300;
     cursor: pointer;
     transition: 0.2s;
-    transition-property: transform;
+    transition-property: transform, background-color;
     display: flex;
     gap: 5px;
 }
@@ -59,10 +59,16 @@ p {
     margin-right: 25px;
 }
 
+.btn-primary:hover {
+    background: #008F58;
+    transition: 0.2s;
+    transition-property: transform, background-color;
+}
+
 .btn-primary:active {
     transform: scale(0.95);
     transition: 0.2s;
-    transition-property: transform;
+    transition-property: transform, background-color;
 }
 
 .bkg-main {
