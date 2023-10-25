@@ -143,3 +143,14 @@ p {
 #version-text {
     font-weight: bold;
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #0D0D0D; /* or add it to the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 2px;
+}
