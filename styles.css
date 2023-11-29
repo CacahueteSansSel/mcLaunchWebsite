@@ -15,6 +15,17 @@ p {
     flex-direction: column;
 }
 
+.window-render-background {
+    z-index: -10;
+    opacity: 0.3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url("res/window_render.png") bottom right no-repeat black;
+    width: 100vw;
+    height: 100vh;
+}
+
 .page {
     width: 100%;
     height: 98.5vh;
@@ -89,7 +100,28 @@ p {
     gap: 5px;
 
     width: 100%;
-    height: 50%;
+    height: 100%;
+}
+
+.icon-platforms {
+    background: url("res/background_platforms.svg") no-repeat center;
+}
+
+.icon-osi {
+    background: url("res/background_opensource.svg") no-repeat center;
+}
+
+.center-title-text {
+    background-size: 500px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 100%;
 }
 
 .desc-text p {
@@ -141,7 +173,7 @@ p {
     align-items: center;
 }
 
-#version-text {
+#version-text, #version-text-bottom {
     font-weight: bold;
 }
 
@@ -154,4 +186,70 @@ p {
 ::-webkit-scrollbar-thumb {
     background: #555555;
     border-radius: 2px;
+}
+
+.screenshot {
+    height: 250px;
+    padding-right: 50px;
+    filter: saturate(0.1);
+    opacity: 0.75;
+    transition-property: filter, transform;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.screenshot:hover {
+    filter: saturate(1);
+    opacity: 1;
+    transition-property: filter, transform;
+    transition: 0.2s;
+}
+
+.screenshot-carousel-scroller {
+    display: flex;
+    animation: carousel-animation 20s infinite;
+    width: fit-content;
+}
+
+.screenshot-carousel {
+    overflow: hidden;
+    width: calc(500px * 3);
+    padding-bottom: 10px;
+}
+
+.text-paragraph {
+    margin-bottom: 30px;
+}
+
+.text-paragraph p {
+    line-height: 5px;
+}
+
+.icon-gpl {
+    margin-top: 10px;
+    animation: breath-and-rotate 10s infinite linear;
+}
+
+@keyframes breath-and-rotate {
+    0% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.75;
+    }
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-26%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }

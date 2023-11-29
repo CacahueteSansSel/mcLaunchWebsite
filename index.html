@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/lib/platform.js" type="application/javascript"></script>
+    <script src="js/github.js" type="application/javascript"></script>
 </head>
 <body>
     <div class="header">
         <img class="main-logo" src="res/logo.png"/>
         <div class="spacer"></div>
-        <button class="btn-primary btn-download btn-right">
+        <button name="btn-download" class="btn-primary btn-download btn-right">
             <img class="logo" src="res/icon/windows_logo.svg" alt="windows-logo"/>
             Download
         </button>
@@ -28,11 +30,11 @@
                 <div class="semitransparent-panel version-box">
                     <div class="version-texts">
                         <p>Last version</p>
-                        <p id="version-text">beta v0.1.1</p>
+                        <p id="version-text">...</p>
                     </div>
                     <div class="spacer"></div>
                     <div class="version-dl-button">
-                        <button class="btn-primary btn-download">
+                        <button name="btn-download" class="btn-primary btn-download">
                             <img class="logo" src="res/icon/windows_logo.svg" alt="windows-logo"/>
                             Download
                         </button>
@@ -41,6 +43,75 @@
             </div>
         </div>
         <div class="page">
+            <div class="center-title-text">
+                <div class="title-text center-text">
+                    <h1 class="slim-text">Create <b>instances</b></h1>
+                </div>
+                <div class="desc-text">
+                    <div class="text-paragraph">
+                        <p>On <b>mcLaunch</b>, you can create instances to separate your modded</p>
+                        <p>survival modpack from your vanilla up-to-date Minecraft.</p>
+                    </div>
+                    <div class="text-paragraph">
+                        <p>mcLaunch support vanilla Minecraft and modloaders such as</p>
+                        <p><b>Forge</b>, <b>Fabric</b>, <b>Quilt</b> and even <b>NeoForge</b> !</p>
+                    </div>
+                </div>
+                <div class="screenshot-carousel">
+                    <div class="screenshot-carousel-scroller">
+                        <img class="screenshot" src="res/screenshot.png" alt="screenshot">
+                        <img class="screenshot" src="res/screenshot2.png" alt="screenshot2">
+                        <img class="screenshot" src="res/screenshot2.png" alt="screenshot2">
+                        <img class="screenshot" src="res/screenshot2.png" alt="screenshot2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="center-icon-text icon-platforms">
+                <div class="title-text center-text">
+                    <h1 class="slim-text">Import from <b>anywhere</b>*</h1>
+                </div>
+                <div class="desc-text">
+                    <p>mcLaunch supports importing modpacks (and installing mods)</p>
+                    <p>from <b>CurseForge</b> and <b>Modrinth</b></p> <br>
+                    <p>*at least it's our goal</p>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="center-icon-text icon-osi">
+                <div class="title-text center-text">
+                    <h1 class="slim-text"><b>Free</b> & <b>Open Source</b></h1>
+                </div>
+                <img src="res/gpl-v3.png" class="icon-gpl" alt="GPL-3.0 License Logo">
+                <div class="desc-text">
+                    <p><b>mcLaunch</b> is <b>open-source</b> on GitHub and licensed under the <b>GPL-3.0</b> license</p>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <div class="center-icon-text">
+                <div class="title-text center-text">
+                    <h1 class="slim-text">Awaiting <b>you</b></h1>
+                </div>
+                <div class="desc-text">
+                    <p>Even if mcLaunch is in beta, you can try it out now !</p>
+                </div>
+                <div class="semitransparent-panel version-box">
+                    <div class="version-texts">
+                        <p>Last version</p>
+                        <p id="version-text-bottom">...</p>
+                    </div>
+                    <div class="spacer"></div>
+                    <div class="version-dl-button">
+                        <button name="btn-download" class="btn-primary btn-download">
+                            <img class="logo" src="res/icon/windows_logo.svg" alt="windows-logo"/>
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
