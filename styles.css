@@ -173,7 +173,7 @@ p {
     align-items: center;
 }
 
-#version-text {
+#version-text, #version-text-bottom {
     font-weight: bold;
 }
 
