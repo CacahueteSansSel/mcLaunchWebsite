@@ -19,9 +19,13 @@ function applyPlatformIcons() {
             logos[i].src = undefined;
         }
     }
+
+    console.log(`changed icons for ${platform.os.family}`)
 }
 
 function onload() {
+    applyPlatformIcons()
+
     getLatestGithubVersion().then(r => {
         let prefix = r.name.startsWith('v0.') || r.name.startsWith('0.') ? 'beta' : 'release';
         let versionName = `${prefix} ${r.name}`
