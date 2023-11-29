@@ -15,6 +15,17 @@ p {
     flex-direction: column;
 }
 
+.window-render-background {
+    z-index: -10;
+    opacity: 0.3;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: url("res/window_render.png") bottom right no-repeat black;
+    width: 100vw;
+    height: 100vh;
+}
+
 .page {
     width: 100%;
     height: 98.5vh;
@@ -94,6 +105,10 @@ p {
 
 .icon-platforms {
     background: url("res/background_platforms.svg") no-repeat center;
+}
+
+.icon-osi {
+    background: url("res/background_opensource.svg") no-repeat center;
 }
 
 .center-title-text {
@@ -208,6 +223,23 @@ p {
 
 .text-paragraph p {
     line-height: 5px;
+}
+
+.icon-gpl {
+    margin-top: 10px;
+    animation: breath-and-rotate 10s infinite linear;
+}
+
+@keyframes breath-and-rotate {
+    0% {
+        opacity: 0.75;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.75;
+    }
 }
 
 @keyframes carousel-animation {
