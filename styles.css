@@ -92,6 +92,10 @@ p {
     height: 100%;
 }
 
+.icon-platforms {
+    background: url("res/background_platforms.svg") no-repeat center;
+}
+
 .center-title-text {
     background-size: 500px;
     text-align: left;
@@ -172,16 +176,29 @@ p {
 .screenshot {
     height: 250px;
     padding-right: 50px;
+    filter: saturate(0.1);
+    opacity: 0.75;
+    transition-property: filter, transform;
+    transform: scale(1);
+    transition: 0.2s;
 }
 
-.screenshot-element {
+.screenshot:hover {
+    filter: saturate(1);
+    opacity: 1;
+    transition-property: filter, transform;
+    transition: 0.2s;
+}
+
+.screenshot-carousel-scroller {
     display: flex;
-    width: 500px;
+    animation: carousel-animation 20s infinite;
+    width: fit-content;
 }
 
 .screenshot-carousel {
-    overflow-x: scroll;
-    width: calc(500px * 2.5);
+    overflow: hidden;
+    width: calc(500px * 3);
     padding-bottom: 10px;
 }
 
@@ -191,4 +208,16 @@ p {
 
 .text-paragraph p {
     line-height: 5px;
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-26%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 }
