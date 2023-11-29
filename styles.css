@@ -92,6 +92,20 @@ p {
     height: 50%;
 }
 
+.center-title-text {
+    background-size: 500px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 5px;
+
+    width: 100%;
+    height: 50%;
+}
+
 .desc-text p {
     height: 10px;
 }
@@ -154,4 +168,17 @@ p {
 ::-webkit-scrollbar-thumb {
     background: #555555;
     border-radius: 2px;
+}
+
+.screenshot {
+    height: 250px;
+    padding-right: 50px;
+}
+
+.screenshot-element {
+    display: flex;
+    width: 500px;
+}
+
+.screenshot-carousel {
 }
