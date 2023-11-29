@@ -13,7 +13,7 @@ function applyPlatformIcons() {
     for (let i = 0; i < logos.length; i++) {
         if (platform.os.family.toLowerCase().includes('windows')) {
             logos[i].src = 'res/icon/windows_logo.svg';
-        } else if (platform.os.family.toLowerCase().includes('mac')) {
+        } else if (platform.os.family.toLowerCase().includes('os x')) {
             logos[i].src = 'res/icon/apple_logo.svg';
         } else {
             logos[i].src = undefined;
