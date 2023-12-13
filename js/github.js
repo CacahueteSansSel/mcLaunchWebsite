@@ -11,16 +11,10 @@ function applyPlatformIcons() {
     let logos = document.getElementsByClassName('logo')
 
     for (let i = 0; i < logos.length; i++) {
-        if (platform.os.family.toLowerCase().includes('windows')) {
-            logos[i].src = 'res/icon/windows_logo.svg';
-        } else if (platform.os.family.toLowerCase().includes('os x')) {
+        if (platform.os.family.toLowerCase().includes('os x')) {
             logos[i].src = 'res/icon/apple_logo.svg';
-        } else {
-            logos[i].src = undefined;
         }
     }
-
-    console.log(`changed icons for ${platform.os.family}`)
 }
 
 function onload() {
@@ -43,7 +37,22 @@ function onload() {
                 document.location = r.html_url
             }
         })
+    }).catch(reason => {
+        document.getElementById('version-text').innerText = "beta"
+        document.getElementById('version-text-bottom').innerText = "beta"
     })
 }
 
+function onscroll() {
+    let header = document.getElementById('header')
+
+    if (window.scrollY) header.classList.add('header-opaque')
+    else header.classList.remove('header-opaque')
+}
+
+function openGithub() {
+    document.location = "https://github.com/CacahueteSansSel/mcLaunch"
+}
+
 window.addEventListener('load', onload)
+window.addEventListener('scroll', onscroll)
