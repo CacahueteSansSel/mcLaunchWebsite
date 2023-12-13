@@ -2,21 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>mcLaunch</title>
+    <link rel="icon" type="image/x-icon" href="/res/icon/favicon.png">
     <link rel="stylesheet" href="styles.css">
     <script src="js/lib/platform.js" type="application/javascript"></script>
     <script src="js/github.js" type="application/javascript"></script>
 </head>
 <body>
-    <div class="header">
+    <div id="header" class="header">
         <img class="main-logo" src="res/logo.png"/>
         <div class="spacer"></div>
+        <button name="btn-github" class="btn-secondary btn-right" onclick="openGithub()">
+            <img class="logo" src="res/icon/github.svg" alt="github-logo"/>
+            GitHub
+        </button>
         <button name="btn-download" class="btn-primary btn-download btn-right">
             <img class="logo" src="res/icon/windows_logo.svg" alt="windows-logo"/>
             Download
         </button>
     </div>
-    <div class="pages-container">
+    <div id="pages-container" class="pages-container">
         <div class="page">
             <div class="center-icon-text">
                 <div class="title-text center-text">
