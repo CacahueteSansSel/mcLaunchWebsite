@@ -30,7 +30,7 @@ function onload() {
         document.getElementsByName('btn-download').forEach((downloadButton) => {
             downloadButton.onclick = function () {
                 if (platform.os.family === "Windows") {
-                    document.location = "https://github.com/CacahueteSansSel/mcLaunch/releases/download/v0.1.1/mcLaunch.Installer.win64.exe"
+                    document.location = "https://github.com/CacahueteSansSel/mcLaunch/releases/download/v0.2.4/mcLaunch-Installer-win-x64.exe"
                     return
                 }
 
